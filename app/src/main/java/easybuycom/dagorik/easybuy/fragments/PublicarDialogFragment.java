@@ -55,7 +55,6 @@ public class PublicarDialogFragment extends DialogFragment implements View.OnCli
                 String ids = id.getText().toString();
                 String nameProduc = objeto.getText().toString();
                 String totale = total.getText().toString();
-
                 Double totalDouble = Double.valueOf(totale);
                 String ivas = iva.getText().toString();
                 Double ivaDouble = Double.valueOf(ivas);
