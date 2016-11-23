@@ -7,6 +7,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,6 +15,9 @@ import java.util.List;
 import easybuycom.dagorik.easybuy.fragments.OneFragment;
 import easybuycom.dagorik.easybuy.fragments.ThreeFragment;
 import easybuycom.dagorik.easybuy.fragments.TwoFragment;
+import easybuycom.dagorik.easybuy.models.PlanNegocio;
+import io.realm.Realm;
+import io.realm.RealmConfiguration;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -33,7 +37,13 @@ public class MainActivity extends AppCompatActivity {
 
         tabLayout.setupWithViewPager(viewPager);
 
+
+
+
     }
+
+
+
 
 
     //Se adapta el ViewPager y se agrega el titulo del appBar a los fragmentos
